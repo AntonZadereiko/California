@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Readex+Pro&display=swap');
+
+$black_color: black;
+$main_font: 'Inter', sans-serif;
+$second_font: 'Readex Pro', sans-serif;
+
+
+.container{
+  max-width: 1294px;
+ margin: auto;
+}
+header{
+  .container{
+  display: flex;
+    justify-content: space-between;
+  }
+.logo{
+  padding: 45px 0 29px;
+  }
+  nav{
+    ul{
+      display: flex;
+      list-style: none;
+      padding: 31px 0 32px;
+      li{
+        margin-right: 33px;
+        &:nth-child(2){
+          &:after {
+            content: "";
+            display: inline-block;
+            box-sizing: border-box;
+            width: 10px;
+            height: 10px;
+            border-bottom: 2px solid;
+            border-right: 2px solid;
+            transform: rotate(45deg);
+            margin-left: 4px;
+            margin-bottom: 3px;
+          }
+          }
+        &:nth-child(3){
+          margin-right: 44px;
+        }
+        a{
+          text-decoration: none;
+          font-family: $main_font;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 17px;
+          text-transform: uppercase;
+          color: #000000;
+        }
+      }
+    }
+  }
+  .items {
+    display: flex;
+    list-style: none;
+    padding: 28px 0;
+    position: relative;
+    right: 25px;
+    li {
+      &:first-of-type {
+        margin-right: 26px;
+      }
+    }
+  }
+}
+.main_banner{
+  margin-top: 28px;
+  .container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: #DCE5E2;
+    border-radius: 32px;
+  }
+  .main_box{
+    max-width: 588px;
+    h1{
+      font-family: $second_font;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 58px;
+      line-height: 70px;
+      color: #000000;
+      margin-bottom: 19px;
+    }
+    p{
+      font-family: $main_font;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      color: #000000;
+      padding-bottom: 30px;
+    }
+    a{
+      font-family: $main_font;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      text-transform: capitalize;
+      color: #000000;
+      border: 1px solid #000000;
+      border-radius: 200px;
+      padding: 14px 53px;
+      text-decoration: none;
+    }
+  }
+}
+.categories {
+  padding: 75px 0 20px;
+
+  .container {
+    h2 {
+      font-family: $second_font;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 42px;
+      line-height: 52px;
+      text-align: center;
+      color: #000000;
+      margin-bottom: 9px;
+      max-width: 780px;
+    }
+
+    p {
+      font-family: $second_font;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      text-align: center;
+      color: #000000;
+      max-width: 628px;
+      margin-bottom: 55px;
+    }
+
+    .categories_articles {
+      display: flex;
+      .laptops {
+        background: #FFFFFF;
+        position: relative;
+        width: 639px;
+        height: 472px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 25);
+        margin-right: 16px;
+        .laptops_photo {
+          position: absolute;
+          left: 30px;
+        }
+
+        .laptops_text {
+          position: absolute;
+          bottom: -30px;
+          right: 40px;
+          p{
+            font-family: $main_font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 19px;
+            text-align: right;
+            color: #000000;
+            position: absolute;
+            right: 0;
+          }
+          h3{
+            font-family: $second_font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 38px;
+            text-align: right;
+            color: #000000;
+            max-width: 192px;
+          }
+        }
+        .watch{
+          width: 639px;
+          height: 270px;
+          background: #FFFFFF;
+          box-shadow: 0 0 5px rgba(0, 0, 0, 25);
+          position: absolute;
+          bottom: -335px;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          .watch_photo{
+          display: block;
+          }
+          p{
+            font-family: $main_font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 19px;
+            text-align: right;
+            color: #000000;
+            margin-bottom: 0;
+          }
+          h3 {
+            max-width: 128px;
+            font-family: $second_font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 38px;
+            text-align: right;
+            color: #000000;
+            margin: 0;
+          }
+        }
+      }
+      .phones{
+        width: 312px;
+        height: 792px;
+        background: #FFFFFF;
+        position: relative;
+        margin-right: 16px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 25);
+        .phones_photo{
+          position: absolute;
+          top: 130px;
+          right: 0;
+        }
+        .phones_text{
+        position: absolute;
+          bottom: 140px;
+          right: 35px;
+        p{
+          font-family: $main_font;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 19px;
+          text-align: center;
+          color: #000000;
+          margin-bottom: 0;
+        }
+          h3{
+            font-family: $second_font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 38px;
+            text-align: center;
+            color: #000000;
+            max-width: 250px;
+            margin: 0;
+          }
+        }
+      }
+      .tablet{
+        width: 312px;
+        height: 792px;
+        background: #FFFFFF;
+        position: relative;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 25);
+        .tablet_photo{
+          position: absolute;
+          bottom: 80px;
+        }
+        .tablet_text{
+          position: absolute;
+          top: 130px;
+          right: 40px;
+          p{
+            font-family: $main_font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            text-align: center;
+            color: #000000;
+            margin-bottom: 0;
+          }
+          h3{
+            font-family: $second_font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 38px;
+            text-align: center;
+            color: #000000;
+            max-width: 233px;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
