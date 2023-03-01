@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Readex+Pro&display=swap");
+.container {
+  max-width: 1294px;
+  margin: auto;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+}
+header .logo {
+  padding: 45px 0 29px;
+}
+header nav ul {
+  display: flex;
+  list-style: none;
+  padding: 31px 0 32px;
+}
+header nav ul li {
+  margin-right: 33px;
+}
+header nav ul li:nth-child(2):after {
+  content: "";
+  display: inline-block;
+  box-sizing: border-box;
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid;
+  border-right: 2px solid;
+  transform: rotate(45deg);
+  margin-left: 4px;
+  margin-bottom: 3px;
+}
+header nav ul li:nth-child(3) {
+  margin-right: 44px;
+}
+header nav ul li a {
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #000000;
+}
+header .items {
+  display: flex;
+  list-style: none;
+  padding: 28px 0;
+  position: relative;
+  right: 25px;
+}
+header .items li:first-of-type {
+  margin-right: 26px;
+}
+
+.main_banner {
+  margin-top: 28px;
+}
+.main_banner .container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: #DCE5E2;
+  border-radius: 32px;
+}
+.main_banner .main_box {
+  max-width: 588px;
+}
+.main_banner .main_box h1 {
+  font-family: "Readex Pro", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 70px;
+  color: #000000;
+  margin-bottom: 19px;
+}
+.main_banner .main_box p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  padding-bottom: 30px;
+}
+.main_banner .main_box a {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: capitalize;
+  color: #000000;
+  border: 1px solid #000000;
+  border-radius: 200px;
+  padding: 14px 53px;
+  text-decoration: none;
+}
+
+.categories {
+  padding: 75px 0 20px;
+}
+.categories .container h2 {
+  font-family: "Readex Pro", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 52px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 9px;
+  max-width: 780px;
+}
+.categories .container p {
+  font-family: "Readex Pro", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #000000;
+  max-width: 628px;
+  margin-bottom: 55px;
+}
+.categories .container .categories_articles {
+  display: flex;
+}
+.categories .container .categories_articles .laptops {
+  background: #FFFFFF;
+  position: relative;
+  width: 639px;
+  height: 472px;
+  box-shadow: 0 0 5px rgb(0, 0, 0);
+  margin-right: 16px;
+}
+.categories .container .categories_articles .laptops .laptops_photo {
+  position: absolute;
+  left: 30px;
+}
+.categories .container .categories_articles .laptops .laptops_text {
+  position: absolute;
+  bottom: -30px;
+  right: 40px;
+}
+.categories .container .categories_articles .laptops .laptops_text p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  text-align: right;
+  color: #000000;
+  position: absolute;
+  right: 0;
+}
+.categories .container .categories_articles .laptops .laptops_text h3 {
+  font-family: "Readex Pro", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+  text-align: right;
+  color: #000000;
+  max-width: 192px;
+}
+.categories .container .categories_articles .laptops .watch {
+  width: 639px;
+  height: 270px;
+  background: #FFFFFF;
+  box-shadow: 0 0 5px rgb(0, 0, 0);
+  position: absolute;
+  bottom: -335px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.categories .container .categories_articles .laptops .watch .watch_photo {
+  display: block;
+}
+.categories .container .categories_articles .laptops .watch p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  text-align: right;
+  color: #000000;
+  margin-bottom: 0;
+}
+.categories .container .categories_articles .laptops .watch h3 {
+  max-width: 128px;
+  font-family: "Readex Pro", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+  text-align: right;
+  color: #000000;
+  margin: 0;
+}
+.categories .container .categories_articles .phones {
+  width: 312px;
+  height: 792px;
+  background: #FFFFFF;
+  position: relative;
+  margin-right: 16px;
+  box-shadow: 0 0 5px rgb(0, 0, 0);
+}
+.categories .container .categories_articles .phones .phones_photo {
+  position: absolute;
+  top: 130px;
+  right: 0;
+}
+.categories .container .categories_articles .phones .phones_text {
+  position: absolute;
+  bottom: 140px;
+  right: 35px;
+}
+.categories .container .categories_articles .phones .phones_text p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 0;
+}
+.categories .container .categories_articles .phones .phones_text h3 {
+  font-family: "Readex Pro", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+  text-align: center;
+  color: #000000;
+  max-width: 250px;
+  margin: 0;
+}
+.categories .container .categories_articles .tablet {
+  width: 312px;
+  height: 792px;
+  background: #FFFFFF;
+  position: relative;
+  box-shadow: 0 0 5px rgb(0, 0, 0);
+}
+.categories .container .categories_articles .tablet .tablet_photo {
+  position: absolute;
+  bottom: 80px;
+}
+.categories .container .categories_articles .tablet .tablet_text {
+  position: absolute;
+  top: 130px;
+  right: 40px;
+}
+.categories .container .categories_articles .tablet .tablet_text p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 0;
+}
+.categories .container .categories_articles .tablet .tablet_text h3 {
+  font-family: "Readex Pro", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+  text-align: center;
+  color: #000000;
+  max-width: 233px;
+  margin: 0;
+}
+
+/*# sourceMappingURL=preproc.css.map */
