@@ -131,6 +131,11 @@ header .items li:first-of-type {
 .categories .categories_articles {
   display: flex;
 }
+.categories .categories_articles:hover {
+  position: relative;
+  bottom: -50px;
+  transition: 1s;
+}
 .categories .categories_articles .laptops {
   background: #FFFFFF;
   position: relative;
@@ -692,6 +697,106 @@ header .items li:first-of-type {
   transform: rotate(-45deg);
   top: -16px;
   right: 3px;
+}
+
+.looking_for {
+  padding: 51px 0 19px;
+}
+.looking_for h3 {
+  margin-bottom: 24px;
+  font-family: "Readex Pro", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 52px;
+  text-align: center;
+  color: #000000;
+}
+.looking_for form {
+  max-width: 650px;
+  margin: auto;
+}
+.looking_for input {
+  background: #F8F9FA;
+  border: 1px solid #C5C5C5;
+  border-radius: 100px;
+  width: 650px;
+  height: 60px;
+  padding-left: 70px;
+  position: relative;
+  right: 50px;
+}
+.looking_for input::placeholder {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: left;
+  color: #000000;
+}
+.looking_for .search_link {
+  position: relative;
+  right: 25px;
+  bottom: 43px;
+}
+.looking_for .search_items {
+  max-width: 550px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.looking_for .search_items a {
+  background: #FFFFFF;
+  border: 1px solid #C5C5C5;
+  border-radius: 200px;
+  padding: 12px 22px 13px;
+  text-decoration: none;
+  margin-right: 7px;
+  margin-bottom: 7px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+.looking_for .search_items .search_items_second {
+  display: flex;
+  max-width: 450px;
+  margin: auto;
+}
+.looking_for .container:last-of-type {
+  background: #DCE5E2;
+  border-radius: 16px;
+  max-width: 935px;
+  margin-top: 68px;
+  padding: 47px 0 43px;
+}
+.looking_for .container h3 {
+  font-family: "Readex Pro", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 52px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 9px;
+}
+.looking_for .container p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 14px;
+}
+.looking_for .container .best_offer_photo {
+  max-width: 233px;
+  width: 100%;
+  margin: auto;
 }
 
 /*# sourceMappingURL=preproc.css.map */
