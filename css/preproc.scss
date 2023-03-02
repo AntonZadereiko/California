@@ -693,7 +693,9 @@ header{
       }
     }
   }
-
+  .see_all{
+    text-decoration: none;
+  }
   .ideas_see_all {
     text-align: center;
     margin-top: 73px;
@@ -776,6 +778,7 @@ header{
     margin: auto;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 
     a {
       background: #FFFFFF;
@@ -791,11 +794,6 @@ header{
       font-size: 14px;
       line-height: 17px;
       color: #000000;
-    }
-    .search_items_second {
-      display: flex;
-      max-width: 450px;
-      margin: auto;
     }
   }
   .container {
@@ -830,6 +828,34 @@ header{
       max-width: 233px;
       width: 100%;
       margin: auto;
+    }
+    .second_form{
+      display: flex;
+      max-width: 400px;
+      margin-top: 14px;
+      .email_input{
+        background: #DCE5E2;
+        border: 1px solid #000000;
+        border-radius: 54px 0 0 54px;
+        height: 50px;
+        width: 285px;
+        margin-right: -50px;
+      }
+      .button{
+        background: #000000;
+        border-radius: 0 200px 200px 0;
+        padding: 15px 20px 16px;
+        .button_sec{
+          font-family: $main_font;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 17px;
+          text-align: center;
+          color: #FFFFFF;
+          background-color: black;
+        }
+      }
     }
   }
 }

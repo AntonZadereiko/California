@@ -663,6 +663,9 @@ header .items li:first-of-type {
   margin-bottom: 28px;
   max-width: 600px;
 }
+.ideas .see_all {
+  text-decoration: none;
+}
 .ideas .ideas_see_all {
   text-align: center;
   margin-top: 73px;
@@ -745,6 +748,7 @@ header .items li:first-of-type {
   margin: auto;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .looking_for .search_items a {
   background: #FFFFFF;
@@ -760,11 +764,6 @@ header .items li:first-of-type {
   font-size: 14px;
   line-height: 17px;
   color: #000000;
-}
-.looking_for .search_items .search_items_second {
-  display: flex;
-  max-width: 450px;
-  margin: auto;
 }
 .looking_for .container:last-of-type {
   background: #DCE5E2;
@@ -797,6 +796,34 @@ header .items li:first-of-type {
   max-width: 233px;
   width: 100%;
   margin: auto;
+}
+.looking_for .container .second_form {
+  display: flex;
+  max-width: 400px;
+  margin-top: 14px;
+}
+.looking_for .container .second_form .email_input {
+  background: #DCE5E2;
+  border: 1px solid #000000;
+  border-radius: 54px 0 0 54px;
+  height: 50px;
+  width: 285px;
+  margin-right: -50px;
+}
+.looking_for .container .second_form .button {
+  background: #000000;
+  border-radius: 0 200px 200px 0;
+  padding: 15px 20px 16px;
+}
+.looking_for .container .second_form .button .button_sec {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: black;
 }
 
 /*# sourceMappingURL=preproc.css.map */
