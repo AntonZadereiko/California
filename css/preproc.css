@@ -72,6 +72,8 @@ header .items li:first-of-type {
 }
 .main_banner .main_box {
   max-width: 588px;
+  margin-top: 150px;
+  margin-left: 56px;
 }
 .main_banner .main_box h1 {
   font-family: "Readex Pro", sans-serif;
