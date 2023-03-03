@@ -70,6 +70,59 @@ header .items li:first-of-type {
   background: #DCE5E2;
   border-radius: 32px;
 }
+.main_banner .container .owl-dots .owl-dot {
+  position: absolute;
+  bottom: 34px;
+  left: 310px;
+  display: flex;
+  justify-content: center;
+}
+.main_banner .container .owl-dots .owl-dot:nth-child(2) {
+  position: absolute;
+  bottom: 34px;
+  left: 550px;
+  display: flex;
+  justify-content: center;
+}
+.main_banner .container .owl-dots .owl-dot:last-of-type {
+  position: absolute;
+  bottom: 34px;
+  left: 800px;
+  display: flex;
+  justify-content: center;
+}
+.main_banner .container .owl-dots .owl-dot span {
+  display: inline-block;
+  width: 194px;
+  height: 2px;
+  background-color: black;
+  margin-right: 34px;
+}
+.main_banner .container .owl-dots .active span {
+  background: blue;
+}
+.main_banner .container .owl-nav .owl-prev {
+  position: absolute;
+  left: 15px;
+}
+.main_banner .container .owl-nav .owl-prev:before {
+  font-weight: 900;
+  content: "\f053";
+  font-family: "Font Awesome 6 Free";
+  font-size: 35px;
+}
+.main_banner .container .owl-nav .owl-next {
+  position: absolute;
+  right: 15px;
+}
+.main_banner .container .owl-nav .owl-next:before {
+  font-weight: 900;
+  content: "\f053";
+  font-family: "Font Awesome 6 Free";
+  font-size: 35px;
+  transform: rotate(180deg);
+  display: inline-block;
+}
 .main_banner .main_box {
   max-width: 588px;
   margin-top: 150px;
