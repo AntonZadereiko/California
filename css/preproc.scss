@@ -4,6 +4,12 @@ $black_color: black;
 $main_font: 'Inter', sans-serif;
 $second_font: 'Readex Pro', sans-serif;
 
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
+
 *{
   padding: 0;
   margin: 0;
@@ -19,15 +25,37 @@ header{
     justify-content: space-between;
   }
 .logo{
-  padding: 45px 0 29px;
+  padding: 33px 0 29px;
+  @include max-screen(560px){
+    padding-bottom: 10px;
+    display: block;
+    margin-left: 30px;
+  }
+  @include max-screen(370px){
+    margin-left: 0;
+  }
   }
   nav{
     ul{
       display: flex;
       list-style: none;
       padding: 31px 0 32px;
+      @include max-screen(560px){
+        display: block;
+        margin-right: 30px;
+        padding-bottom: 0;
+      }
+      @include max-screen(370px){
+        margin-right: 0;
+      }
       li{
         margin-right: 33px;
+        @include max-screen(650px){
+          margin-right: 15px;
+        }
+        @include max-screen(560px){
+          margin-bottom: 10px;
+        }
         &:nth-child(2){
           &:after {
             content: "";
@@ -44,6 +72,9 @@ header{
           }
         &:nth-child(3){
           margin-right: 44px;
+          @include max-screen(650px){
+            margin-right: 15px;
+          }
         }
         a{
           text-decoration: none;
@@ -64,6 +95,10 @@ header{
     padding: 28px 0;
     position: relative;
     right: 25px;
+    @include max-screen(715px){
+      display: none;
+    }
+
     li {
       &:first-of-type {
         margin-right: 26px;
@@ -73,21 +108,37 @@ header{
 }
 .main_banner{
   margin-top: 28px;
+  @include max-screen(560px){
+    margin-top: 5px;
+  }
   .container{
     display: flex;
     justify-content: flex-end;
     align-items: center;
     background: #DCE5E2;
     border-radius: 32px;
+    }
     .owl-dots{
 
       .owl-dot{
+        @include max-screen(1222px){
+          bottom: 10px;
+        }
+        @include max-screen(1170px){
+          display: none;
+        }
         position: absolute;
         bottom: 34px;
         left: 310px;
         display: flex;
         justify-content: center;
         &:nth-child(2){
+          @include max-screen(1222px){
+            bottom: 10px;
+          }
+          @include max-screen(1170px){
+            display: none;
+          }
           position: absolute;
           bottom: 34px;
           left: 550px;
@@ -95,6 +146,12 @@ header{
           justify-content: center;
         }
         &:last-of-type{
+          @include max-screen(1222px){
+            bottom: 10px;
+          }
+          @include max-screen(1170px){
+            display: none;
+          }
           position: absolute;
           bottom: 34px;
           left: 800px;
@@ -119,6 +176,9 @@ header{
       .owl-prev{
         position: absolute;
         left: 15px;
+        @include max-screen(615px){
+          display: none;
+        }
         &:before{
           font-weight: 900;
           content: "\f053";
@@ -129,6 +189,9 @@ header{
       .owl-next{
         position: absolute;
         right: 15px;
+        @include max-screen(615px){
+          display: none;
+        }
         &:before{
           font-weight: 900;
           content: "\f053";
@@ -144,6 +207,32 @@ header{
     max-width: 588px;
     margin-top: 150px;
     margin-left: 56px;
+    @include max-screen(1140px){
+      margin-top: 30px;
+    }
+    @include max-screen(1006px){
+      margin-top: 0;
+    }
+    @include max-screen(1000px){
+      margin-top: 200px;
+      margin-left: 200px;
+    }
+    @include max-screen(915px){
+      margin-left: 100px;
+    }
+    @include max-screen(715px){
+      margin-left: 40px;
+      margin-top: 100px;
+    }
+    @include max-screen(615px){
+      margin-left: 0;
+    }
+    @include max-screen(555px){
+      margin-top: 50px;
+    }
+    @include max-screen(468px){
+      margin-top: 0;
+    }
     h1{
       font-family: $second_font;
       font-style: normal;
@@ -152,6 +241,11 @@ header{
       line-height: 70px;
       color: #000000;
       margin-bottom: 19px;
+      @include max-screen(447px){
+        font-size: 30px;
+        margin-top: 10px;
+        line-height: 50px;
+      }
     }
     p{
       font-family: $main_font;
@@ -177,7 +271,6 @@ header{
       text-decoration: none;
     }
   }
-}
 .categories {
   padding: 75px 0 20px;
     h2 {
@@ -204,6 +297,15 @@ header{
 
     .categories_articles {
       display: flex;
+      @include max-screen(1300px){
+       display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+      @include max-screen(983px){
+        display: block;
+      }
+
       .laptops {
         background: #FFFFFF;
         position: relative;
@@ -211,6 +313,28 @@ header{
         height: 472px;
         box-shadow:0 0 20px darkseagreen;
         margin-right: 16px;
+        @include max-screen(655px){
+        width: 500px;
+        }
+        @include max-screen(983px){
+          margin-bottom: 320px;
+          margin-left: 130px;
+        }
+        @include max-screen(800px){
+          margin-left: 70px;
+        }
+        @include max-screen(733px){
+          margin-left: 0;
+        }
+        @include max-screen(517px){
+          width: 312px;
+          height: 100px;
+          margin-left: 80px;
+          margin-bottom: 165px;
+        }
+        @include max-screen(462px){
+        margin-left: 3px;
+        }
         &:hover{
           position: relative;
           bottom: -50px;
@@ -219,6 +343,12 @@ header{
         .laptops_photo {
           position: absolute;
           left: 30px;
+          @include max-screen(655px){
+            left: 0;
+          }
+          @include max-screen(517px){
+            display: none;
+          }
         }
 
         .laptops_text {
@@ -256,8 +386,26 @@ header{
           display: flex;
           justify-content: space-around;
           align-items: center;
+          @include max-screen(1300px){
+            margin-bottom: 40px;
+          }
+          @include max-screen(655px){
+            width: 500px;
+          }
+          @include max-screen(517px){
+            width: 312px;
+            height: 100px;
+            margin-left: 0;
+            bottom: -170px;
+          }
+          @include max-screen(462px){
+            margin-left: 1px;
+          }
           .watch_photo{
           display: block;
+            @include max-screen(517px){
+              display: none;
+            }
           }
           p{
             font-family: $main_font;
@@ -289,6 +437,22 @@ header{
         position: relative;
         margin-right: 16px;
         box-shadow:0 0 20px darkseagreen ;
+        @include max-screen(983px){
+          margin-bottom: 40px;
+          margin-left: 330px;
+        }
+        @include max-screen(800px){
+          margin-left: 150px;
+        }
+        @include max-screen(517px){
+        margin-left: 80px;
+          margin-bottom: 30px;
+        }
+        @include max-screen(462px){
+          margin-left: 3px;
+          height: 100px;
+          width: 312px;
+        }
         &:hover{
           position: relative;
           bottom: -50px;
@@ -298,11 +462,17 @@ header{
           position: absolute;
           top: 130px;
           right: 0;
+          @include max-screen(462px){
+            display: none;
+          }
         }
         .phones_text{
         position: absolute;
           bottom: 140px;
           right: 35px;
+          @include max-screen(462px){
+            bottom: 0;
+          }
         p{
           font-family: $main_font;
           font-style: normal;
@@ -331,6 +501,20 @@ header{
         height: 792px;
         background: #FFFFFF;
         position: relative;
+        @include max-screen(983px){
+          margin-left: 330px;
+        }
+        @include max-screen(800px){
+          margin-left: 150px;
+        }
+        @include max-screen(517px){
+          margin-left: 80px;
+        }
+        @include max-screen(462px){
+          margin-left: 3px;
+          height: 100px;
+          width: 312px;
+        }
         &:hover{
           position: relative;
           bottom: -50px;
@@ -340,11 +524,17 @@ header{
         .tablet_photo{
           position: absolute;
           bottom: 80px;
+          @include max-screen(462px){
+            display: none;
+          }
         }
         .tablet_text{
           position: absolute;
           top: 130px;
           right: 40px;
+          @include max-screen(462px){
+            top: 0;
+          }
           p{
             font-family: $main_font;
             font-style: normal;
@@ -395,6 +585,14 @@ header{
   .selled_items{
     display: flex;
     justify-content: space-between;
+    @include max-screen(1212px){
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    @include max-screen(606px){
+      justify-content: center;
+    }
     .macbook_pro{
       max-width: 303px;
       padding: 28px 0;
@@ -570,6 +768,11 @@ header{
     &:last-of-type {
       display: flex;
       justify-content: space-between;
+      @include max-screen(1212px){
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
     }
 
     .latest {
@@ -578,7 +781,10 @@ header{
       padding-top: 41px;
       max-width: 413px;
       text-align: center;
-
+      margin-bottom: 10px;
+      @include max-screen(415px){
+        padding-bottom: 30px;
+      }
       p {
         font-family: $second_font;
         font-style: normal;
@@ -619,7 +825,9 @@ header{
       .latest_photo {
         display: inline-block;
         margin-top: 30px;
-
+        @include max-screen(415px){
+          display: none;
+        }
       }
     }
     .best_selling{
@@ -628,6 +836,10 @@ header{
       padding-top: 41px;
       max-width: 413px;
       text-align: center;
+      margin-bottom: 10px;
+      @include max-screen(415px){
+        padding-bottom: 30px;
+      }
       p {
         font-family: $second_font;
         font-style: normal;
@@ -667,6 +879,9 @@ header{
       .best_selling_photo{
         display: inline-block;
         margin-top: 30px;
+        @include max-screen(415px){
+          display: none;
+        }
       }
     }
     .product{
@@ -675,6 +890,9 @@ header{
       padding-top: 41px;
       max-width: 413px;
       text-align: center;
+      @include max-screen(415px){
+        padding-bottom: 30px;
+      }
       p {
         font-family: $second_font;
         font-style: normal;
@@ -714,6 +932,9 @@ header{
       .product_photo{
         display: inline-block;
         margin-top: 30px;
+        @include max-screen(415px){
+          display: none;
+        }
       }
     }
   }
@@ -746,9 +967,16 @@ header{
   .ideas_box {
     display: flex;
     justify-content: space-between;
-
+    @include max-screen(1240px){
+    flex-wrap: wrap;
+    }
     .ideas_photo {
       display: block;
+      max-width: 620px;
+      width: 100%;
+      @include max-screen(620px){
+        display: none;
+      }
     }
 
     .ideas_text {
@@ -831,6 +1059,20 @@ header{
     padding-left: 70px ;
     position: relative;
     right: 50px;
+    @include max-screen(767px){
+    padding-left: 100px;
+      width: 250px;
+      right: -120px;
+    }
+    @include max-screen(575px){
+      padding-left: 30px;
+    }
+    @include max-screen(495px){
+    right: -40px;
+    }
+    @include max-screen(366px){
+    right: -20px;
+    }
     &::placeholder{
       font-family: $main_font;
       font-style: normal;
@@ -845,6 +1087,16 @@ header{
     position: relative;
    right: 25px;
     bottom: 43px;
+    @include max-screen(767px){
+    right: -55px;
+      bottom: -6px;
+    }
+    @include max-screen(495px){
+      right: -5px;
+    }
+    @include max-screen(366px){
+      right: 15px;
+    }
   }
   .search_items {
     max-width: 550px;
@@ -852,7 +1104,9 @@ header{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
+    @include max-screen(767px){
+      margin-top: 10px;
+    }
     a {
       background: #FFFFFF;
       border: 1px solid #C5C5C5;
@@ -867,6 +1121,7 @@ header{
       font-size: 14px;
       line-height: 17px;
       color: #000000;
+
     }
   }
   .container {
@@ -913,11 +1168,28 @@ header{
         height: 50px;
         width: 285px;
         margin-right: -50px;
+        @include max-screen(767px){
+          width: 150px;
+          margin-left: -100px;
+        }
+        @include max-screen(495px){
+        margin-left: 10px;
+        }
       }
       .button{
         background: #000000;
         border-radius: 0 200px 200px 0;
         padding: 15px 20px 16px;
+        @include max-screen(767px){
+          position: relative;
+          right: -170px;
+        }
+        @include max-screen(495px){
+          right: -90px;
+        }
+        @include max-screen(375px){
+          right: -70px;
+        }
         .button_sec{
           font-family: $main_font;
           font-style: normal;
@@ -939,6 +1211,10 @@ footer{
     display: flex;
     justify-content: space-between;
     border-bottom: solid 2px #DCE5E2;
+    @include max-screen(860px){
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
     .last_logo{
       max-width: 304px;
       p{
@@ -985,6 +1261,10 @@ footer{
       padding-bottom: 4px;
       display: flex;
       justify-content: space-between;
+      @include max-screen(420px){
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
       p{
         font-family: $second_font;
         font-style: normal;
