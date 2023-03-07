@@ -434,6 +434,12 @@ header .items li:first-of-type {
   justify-content: space-around;
   align-items: center;
 }
+.categories .categories_articles .laptops .watch:hover {
+  position: relative;
+  transition: 0.3s;
+  transform: scale(1.1);
+  bottom: -50px;
+}
 @media screen and (max-width: 1300px) {
   .categories .categories_articles .laptops .watch {
     margin-bottom: 40px;
