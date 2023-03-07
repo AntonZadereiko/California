@@ -105,7 +105,7 @@ header .items li:first-of-type {
 }
 
 .main_banner {
-  margin-top: 28px;
+  margin-top: 12px;
 }
 @media screen and (max-width: 560px) {
   .main_banner {
@@ -381,9 +381,8 @@ header .items li:first-of-type {
   }
 }
 .categories .categories_articles .laptops:hover {
-  position: relative;
-  bottom: -50px;
-  transition: 1s;
+  transition: 0.5s;
+  transform: scale(1.1);
 }
 .categories .categories_articles .laptops .laptops_photo {
   position: absolute;
@@ -521,8 +520,8 @@ header .items li:first-of-type {
 }
 .categories .categories_articles .phones:hover {
   position: relative;
-  bottom: -50px;
-  transition: 1s;
+  transition: 0.5s;
+  transform: scale(1.1);
 }
 .categories .categories_articles .phones .phones_photo {
   position: absolute;
@@ -596,8 +595,8 @@ header .items li:first-of-type {
 }
 .categories .categories_articles .tablet:hover {
   position: relative;
-  bottom: -50px;
-  transition: 1s;
+  transition: 0.5s;
+  transform: scale(1.1);
 }
 .categories .categories_articles .tablet .tablet_photo {
   position: absolute;
@@ -1029,7 +1028,10 @@ header .items li:first-of-type {
 .ideas {
   padding: 47px 0 24px;
 }
-.ideas h3 {
+.ideas .container {
+  text-align: center;
+}
+.ideas .container h3 {
   font-family: "Readex Pro", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1039,7 +1041,7 @@ header .items li:first-of-type {
   color: #000000;
   margin-bottom: 9px;
 }
-.ideas p {
+.ideas .container p {
   font-family: "Readex Pro", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1049,29 +1051,32 @@ header .items li:first-of-type {
   color: #000000;
   margin-bottom: 56px;
 }
-.ideas .ideas_box {
+.ideas .container .ideas_box {
   display: flex;
   justify-content: space-between;
+  text-align: left;
+  margin-bottom: 35px;
 }
 @media screen and (max-width: 1240px) {
-  .ideas .ideas_box {
+  .ideas .container .ideas_box {
     flex-wrap: wrap;
+    justify-content: space-around;
   }
 }
-.ideas .ideas_box .ideas_photo {
+.ideas .container .ideas_box .ideas_photo {
   display: block;
   max-width: 620px;
   width: 100%;
 }
 @media screen and (max-width: 620px) {
-  .ideas .ideas_box .ideas_photo {
+  .ideas .container .ideas_box .ideas_photo {
     display: none;
   }
 }
-.ideas .ideas_box .ideas_text {
+.ideas .container .ideas_box .ideas_text {
   max-width: 600px;
 }
-.ideas .ideas_box .ideas_text h4 {
+.ideas .container .ideas_box .ideas_text h4 {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1081,10 +1086,10 @@ header .items li:first-of-type {
   margin-bottom: 28px;
   max-width: 600px;
 }
-.ideas .see_all {
+.ideas .container .see_all {
   text-decoration: none;
 }
-.ideas .ideas_see_all {
+.ideas .container .ideas_see_all {
   text-align: center;
   margin-top: 73px;
   font-family: "Inter", sans-serif;
@@ -1095,7 +1100,7 @@ header .items li:first-of-type {
   text-transform: capitalize;
   color: #000000;
 }
-.ideas .ideas_see_all .arrow {
+.ideas .container .ideas_see_all .arrow {
   box-sizing: border-box;
   position: relative;
   top: 10px;
@@ -1107,7 +1112,7 @@ header .items li:first-of-type {
   transform: scale(var(--ggs, 1));
   border-right: 3px solid;
 }
-.ideas .ideas_see_all .arrow:after {
+.ideas .container .ideas_see_all .arrow:after {
   content: "";
   display: inline-block;
   box-sizing: border-box;
@@ -1182,6 +1187,9 @@ header .items li:first-of-type {
   position: relative;
   right: 25px;
   bottom: 43px;
+  background: #F8F9FA;
+  border: none;
+  cursor: pointer;
 }
 @media screen and (max-width: 767px) {
   .looking_for .search_link {
@@ -1225,6 +1233,10 @@ header .items li:first-of-type {
   font-size: 14px;
   line-height: 17px;
   color: #000000;
+}
+.looking_for .search_items a:hover {
+  background-color: #F8F9FA;
+  transition: 0.3s;
 }
 .looking_for .container:last-of-type {
   background: #DCE5E2;
@@ -1368,6 +1380,11 @@ footer .container ul li a {
   line-height: 22px;
   color: #000000;
 }
+footer .container ul li a:hover {
+  position: relative;
+  transition: 0.2s;
+  background-color: #869791;
+}
 footer .container:last-of-type {
   padding-top: 52px;
   padding-bottom: 4px;
@@ -1380,7 +1397,7 @@ footer .container:last-of-type {
     flex-wrap: wrap;
   }
 }
-footer .container:last-of-type p {
+footer .container:last-of-type a {
   font-family: "Readex Pro", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -1395,13 +1412,13 @@ footer .container:last-of-type span {
   font-size: 18px;
   line-height: 22px;
   color: #000000;
-  margin-left: 5px;
+  margin-left: 3px;
 }
 footer .container .last_text {
   box-sizing: border-box;
   position: relative;
   top: 9px;
-  right: -2px;
+  right: 2px;
   display: inline-block;
   width: 13px;
   height: 13px;

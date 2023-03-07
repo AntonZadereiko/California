@@ -107,7 +107,7 @@ header{
   }
 }
 .main_banner{
-  margin-top: 28px;
+  margin-top: 12px;
   @include max-screen(560px){
     margin-top: 5px;
   }
@@ -336,9 +336,8 @@ header{
         margin-left: 3px;
         }
         &:hover{
-          position: relative;
-          bottom: -50px;
-          transition: 1s;
+          transition: 0.5s ;
+          transform: scale(1.1);
         }
         .laptops_photo {
           position: absolute;
@@ -355,6 +354,7 @@ header{
           position: absolute;
           right: 40px;
           bottom: 0;
+
           p{
             font-family: $main_font;
             font-style: normal;
@@ -455,8 +455,8 @@ header{
         }
         &:hover{
           position: relative;
-          bottom: -50px;
-          transition: 1s;
+          transition: 0.5s ;
+          transform: scale(1.1);
         }
         .phones_photo{
           position: absolute;
@@ -517,8 +517,8 @@ header{
         }
         &:hover{
           position: relative;
-          bottom: -50px;
-          transition: 1s;
+          transition: 0.5s ;
+          transform: scale(1.1);
         }
         box-shadow:0 0 20px darkseagreen ;
         .tablet_photo{
@@ -941,98 +941,107 @@ header{
 }
 .ideas {
   padding: 47px 0 24px;
-
-  h3 {
-    font-family: $second_font;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 42px;
-    line-height: 52px;
-    text-align: center;
-    color: #000000;
-    margin-bottom: 9px;
-  }
-
-  p {
-    font-family: $second_font;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 17px;
-    text-align: center;
-    color: #000000;
-    margin-bottom: 56px;
-  }
-
-  .ideas_box {
-    display: flex;
-    justify-content: space-between;
-    @include max-screen(1240px){
-    flex-wrap: wrap;
-    }
-    .ideas_photo {
-      display: block;
-      max-width: 620px;
-      width: 100%;
-      @include max-screen(620px){
-        display: none;
+    .container {
+      text-align: center;
+      h3 {
+        font-family: $second_font;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 42px;
+        line-height: 52px;
+        text-align: center;
+        color: #000000;
+        margin-bottom: 9px;
       }
-    }
 
-    .ideas_text {
-      max-width: 600px;
+      p {
+        font-family: $second_font;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 17px;
+        text-align: center;
+        color: #000000;
+        margin-bottom: 56px;
+      }
 
-      h4 {
+      .ideas_box {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+        margin-bottom: 35px;
+        @include max-screen(1240px) {
+          flex-wrap: wrap;
+          justify-content: space-around;
+        }
+
+        .ideas_photo {
+          display: block;
+          max-width: 620px;
+          width: 100%;
+          @include max-screen(620px) {
+            display: none;
+          }
+        }
+
+        .ideas_text {
+          max-width: 600px;
+
+          h4 {
+            font-family: $main_font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 30px;
+            color: #000000;
+            margin-bottom: 28px;
+            max-width: 600px;
+          }
+        }
+      }
+
+      .see_all {
+        text-decoration: none;
+      }
+
+      .ideas_see_all {
+        text-align: center;
+        margin-top: 73px;
         font-family: $main_font;
         font-style: normal;
         font-weight: 400;
         font-size: 24px;
-        line-height: 30px;
+        line-height: 29px;
+        text-transform: capitalize;
         color: #000000;
-        margin-bottom: 28px;
-        max-width: 600px;
-      }
-    }
-  }
-  .see_all{
-    text-decoration: none;
-  }
-  .ideas_see_all {
-    text-align: center;
-    margin-top: 73px;
-    font-family: $main_font;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
-    text-transform: capitalize;
-    color: #000000;
-    .arrow {
-      box-sizing: border-box;
-      position: relative;
-      top: 10px;
-      right: -15px;
-      display: inline-block;
-      width: 13px;
-      height: 13px;
-      border-top: 3px solid;
-      transform: scale(var(--ggs, 1));
-      border-right: 3px solid;
 
-      &:after {
-        content: "";
-        display: inline-block;
-        box-sizing: border-box;
-        position: relative;
-        width: 14px;
-        height: 2px;
-        background: currentColor;
-        transform: rotate(-45deg);
-        top: -16px;
-        right: 3px
+        .arrow {
+          box-sizing: border-box;
+          position: relative;
+          top: 10px;
+          right: -15px;
+          display: inline-block;
+          width: 13px;
+          height: 13px;
+          border-top: 3px solid;
+          transform: scale(var(--ggs, 1));
+          border-right: 3px solid;
+
+          &:after {
+            content: "";
+            display: inline-block;
+            box-sizing: border-box;
+            position: relative;
+            width: 14px;
+            height: 2px;
+            background: currentColor;
+            transform: rotate(-45deg);
+            top: -16px;
+            right: 3px
+          }
+        }
       }
     }
-  }
 }
 .looking_for{
   padding: 51px 0 19px;
@@ -1087,6 +1096,9 @@ header{
     position: relative;
    right: 25px;
     bottom: 43px;
+    background: #F8F9FA;
+    border: none;
+    cursor: pointer;
     @include max-screen(767px){
     right: -55px;
       bottom: -6px;
@@ -1108,6 +1120,10 @@ header{
       margin-top: 10px;
     }
     a {
+      &:hover{
+        background-color:#F8F9FA;
+        transition: 0.3s;
+      }
       background: #FFFFFF;
       border: 1px solid #C5C5C5;
       border-radius: 200px;
@@ -1244,6 +1260,11 @@ footer{
           }
         }
         a{
+          &:hover{
+            position: relative;
+            transition: 0.2s ;
+            background-color: #869791;
+          }
           text-decoration: none;
           font-family: $main_font;
           font-style: normal;
@@ -1265,7 +1286,7 @@ footer{
         justify-content: space-between;
         flex-wrap: wrap;
       }
-      p{
+      a{
         font-family: $second_font;
         font-style: normal;
         font-weight: 400;
@@ -1280,14 +1301,14 @@ footer{
         font-size: 18px;
         line-height: 22px;
         color: #000000;
-        margin-left: 5px;
+        margin-left: 3px;
       }
     }
     .last_text{
       box-sizing: border-box;
       position: relative;
       top: 9px;
-      right: -2px;
+      right: 2px;
       display: inline-block;
       width: 13px;
       height: 13px;
