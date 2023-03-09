@@ -309,39 +309,54 @@ header{
       .laptops {
         background: #FFFFFF;
         position: relative;
-        width: 639px;
-        height: 472px;
-        box-shadow:0 0 20px darkseagreen;
+        max-width: 639px;
+        max-height: 472px;
+
         margin-right: 16px;
-        @include max-screen(655px){
-        width: 500px;
-        }
-        @include max-screen(983px){
-          margin-bottom: 320px;
-          margin-left: 130px;
-        }
-        @include max-screen(800px){
-          margin-left: 70px;
-        }
-        @include max-screen(733px){
-          margin-left: 0;
-        }
-        @include max-screen(517px){
-          width: 312px;
-          height: 100px;
-          margin-left: 80px;
-          margin-bottom: 165px;
-        }
-        @include max-screen(462px){
-        margin-left: 3px;
-        }
-        &:hover{
-          transition: 0.5s ;
-          transform: scale(1.1);
-        }
+
+
+        .laptops_first{
+          width: 639px;
+          z-index: 1;
+          box-shadow:0 0 20px darkseagreen;
+          height: 472px;
+          background: #FFFFFF;
+          &:hover{
+            transition: 0.5s ;
+            transform: scale(1.1);
+            position: relative;
+            bottom: -23px;
+          }
+          @include max-screen(983px){
+            margin-bottom: 320px;
+            margin-left: 130px;
+          }
+          @include max-screen(800px){
+            margin-left: 70px;
+          }
+          @include max-screen(733px){
+            margin-left: 0;
+          }
+          @include max-screen(655px){
+            width: 500px;
+          }
+          @include max-screen(517px){
+            width: 312px;
+            height: 100px;
+            margin-left: 80px;
+          }
+          @include max-screen(462px){
+            margin-left: 3px;
+          }
         .laptops_photo {
           position: absolute;
           left: 30px;
+          @include max-screen(983px){
+            left: 160px;
+          }
+          @include max-screen(733px){
+            left: 0;
+          }
           @include max-screen(655px){
             left: 0;
           }
@@ -354,8 +369,16 @@ header{
           position: absolute;
           right: 40px;
           bottom: 0;
-
-          p{
+          @include max-screen(655px){
+            right: 200px;
+          }
+          @include max-screen(517px){
+            right: 153px;
+          }
+          @include max-screen(360px){
+            right: 100px;
+          }
+          p {
             font-family: $main_font;
             font-style: normal;
             font-weight: 400;
@@ -365,7 +388,8 @@ header{
             color: #000000;
             margin-bottom: 0;
           }
-          h3{
+
+          h3 {
             font-family: $second_font;
             font-style: normal;
             font-weight: 400;
@@ -376,36 +400,46 @@ header{
             max-width: 192px;
           }
         }
+        }
         .watch{
           width: 639px;
           height: 270px;
           background: #FFFFFF;
           box-shadow:0 0 20px darkseagreen ;
+          margin-top: 49px;
           position: absolute;
-          bottom: -320px;
           display: flex;
           justify-content: space-around;
           align-items: center;
           &:hover{
-            position: relative;
-            transition: 0.3s ;
+            transition: 0.5s ;
             transform: scale(1.1);
-            bottom: -50px;
+            z-index: 1;
           }
           @include max-screen(1300px){
             margin-bottom: 40px;
           }
+          @include max-screen(983px){
+            top: 450px;
+            left: 130px;
+          }
+          @include max-screen(800px){
+            margin-left: -60px;
+          }
+          @include max-screen(733px){
+            left: 0;
+          }
           @include max-screen(655px){
-            width: 500px;
+            width: 560px;
           }
           @include max-screen(517px){
             width: 312px;
             height: 100px;
-            margin-left: 0;
-            bottom: -170px;
+            top: 80px;
+            left: 140px;
           }
           @include max-screen(462px){
-            margin-left: 1px;
+            margin-left: -136px;
           }
           .watch_photo{
           display: block;
@@ -451,8 +485,10 @@ header{
           margin-left: 150px;
         }
         @include max-screen(517px){
-        margin-left: 80px;
-          margin-bottom: 30px;
+          width: 312px;
+          height: 100px;
+          margin-left: 80px;
+          top: -160px;
         }
         @include max-screen(462px){
           margin-left: 3px;
@@ -468,7 +504,7 @@ header{
           position: absolute;
           top: 130px;
           right: 0;
-          @include max-screen(462px){
+          @include max-screen(517px){
             display: none;
           }
         }
@@ -476,7 +512,7 @@ header{
         position: absolute;
           bottom: 140px;
           right: 35px;
-          @include max-screen(462px){
+          @include max-screen(517px){
             bottom: 0;
           }
         p{
@@ -507,6 +543,9 @@ header{
         height: 792px;
         background: #FFFFFF;
         position: relative;
+        @include max-screen(1300px){
+          margin-top: 25px;
+        }
         @include max-screen(983px){
           margin-left: 330px;
         }
@@ -515,6 +554,9 @@ header{
         }
         @include max-screen(517px){
           margin-left: 80px;
+          width: 312px;
+          height: 100px;
+          top: -170px;
         }
         @include max-screen(462px){
           margin-left: 3px;
@@ -530,7 +572,7 @@ header{
         .tablet_photo{
           position: absolute;
           bottom: 80px;
-          @include max-screen(462px){
+          @include max-screen(517px){
             display: none;
           }
         }
@@ -538,7 +580,7 @@ header{
           position: absolute;
           top: 130px;
           right: 40px;
-          @include max-screen(462px){
+          @include max-screen(517px){
             top: 0;
           }
           p{
@@ -568,6 +610,9 @@ header{
   }
 .most_selled{
   padding: 78px 0 27px;
+  @include max-screen(517px){
+    padding-top: 0;
+  }
   h3{
     font-family: $second_font;
     font-style: normal;
@@ -1239,6 +1284,9 @@ footer{
     }
     .last_logo{
       max-width: 304px;
+      @include max-screen(432px){
+        margin-bottom: 15px;
+      }
       p{
         margin-top: 18px;
         font-family: $main_font;
