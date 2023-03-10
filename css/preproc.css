@@ -383,12 +383,17 @@ header .items li:first-of-type {
   .categories .categories_articles .laptops .laptops_first {
     width: 312px;
     height: 100px;
-    margin-left: 80px;
+    margin-left: 100px;
   }
 }
 @media screen and (max-width: 462px) {
   .categories .categories_articles .laptops .laptops_first {
-    margin-left: 3px;
+    margin-left: 43px;
+  }
+}
+@media screen and (max-width: 366px) {
+  .categories .categories_articles .laptops .laptops_first {
+    margin-left: 2px;
   }
 }
 .categories .categories_articles .laptops .laptops_first .laptops_photo {
@@ -435,7 +440,7 @@ header .items li:first-of-type {
     right: 133px;
   }
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 387px) {
   .categories .categories_articles .laptops .laptops_first .laptops_text {
     right: 100px;
   }
@@ -512,12 +517,17 @@ header .items li:first-of-type {
     width: 312px;
     height: 100px;
     top: 80px;
-    left: 140px;
+    left: 160px;
   }
 }
 @media screen and (max-width: 462px) {
   .categories .categories_articles .laptops .watch {
-    margin-left: -136px;
+    margin-left: -116px;
+  }
+}
+@media screen and (max-width: 366px) {
+  .categories .categories_articles .laptops .watch {
+    margin-left: -157px;
   }
 }
 .categories .categories_articles .laptops .watch .watch_photo {
@@ -577,15 +587,20 @@ header .items li:first-of-type {
   .categories .categories_articles .phones {
     width: 312px;
     height: 100px;
-    margin-left: 80px;
+    margin-left: 100px;
     top: -160px;
   }
 }
 @media screen and (max-width: 462px) {
   .categories .categories_articles .phones {
-    margin-left: 3px;
+    margin-left: 43px;
     height: 100px;
     width: 312px;
+  }
+}
+@media screen and (max-width: 366px) {
+  .categories .categories_articles .phones {
+    margin-left: 2px;
   }
 }
 .categories .categories_articles .phones:hover {
@@ -658,7 +673,7 @@ header .items li:first-of-type {
 }
 @media screen and (max-width: 517px) {
   .categories .categories_articles .tablet {
-    margin-left: 80px;
+    margin-left: 100px;
     width: 312px;
     height: 100px;
     top: -170px;
@@ -666,9 +681,14 @@ header .items li:first-of-type {
 }
 @media screen and (max-width: 462px) {
   .categories .categories_articles .tablet {
-    margin-left: 3px;
+    margin-left: 43px;
     height: 100px;
     width: 312px;
+  }
+}
+@media screen and (max-width: 366px) {
+  .categories .categories_articles .tablet {
+    margin-left: 2px;
   }
 }
 .categories .categories_articles .tablet:hover {
@@ -1158,6 +1178,11 @@ header .items li:first-of-type {
 }
 .ideas .container .ideas_box .ideas_text {
   max-width: 600px;
+}
+@media screen and (max-width: 620px) {
+  .ideas .container .ideas_box .ideas_text {
+    margin-left: 10px;
+  }
 }
 .ideas .container .ideas_box .ideas_text h4 {
   font-family: "Inter", sans-serif;

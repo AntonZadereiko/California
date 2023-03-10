@@ -343,10 +343,13 @@ header{
           @include max-screen(517px){
             width: 312px;
             height: 100px;
-            margin-left: 80px;
+            margin-left: 100px;
           }
           @include max-screen(462px){
-            margin-left: 3px;
+            margin-left: 43px;
+          }
+          @include max-screen(366px){
+            margin-left: 2px;
           }
         .laptops_photo {
           position: absolute;
@@ -378,7 +381,7 @@ header{
           @include max-screen(470px){
             right: 133px;
           }
-          @include max-screen(360px){
+          @include max-screen(387px){
             right: 100px;
           }
           @include max-screen(336px){
@@ -442,10 +445,13 @@ header{
             width: 312px;
             height: 100px;
             top: 80px;
-            left: 140px;
+            left: 160px;
           }
           @include max-screen(462px){
-            margin-left: -136px;
+            margin-left: -116px;
+          }
+          @include max-screen(366px){
+            margin-left: -157px;
           }
           .watch_photo{
           display: block;
@@ -499,13 +505,16 @@ header{
         @include max-screen(517px){
           width: 312px;
           height: 100px;
-          margin-left: 80px;
+          margin-left: 100px;
           top: -160px;
         }
         @include max-screen(462px){
-          margin-left: 3px;
+          margin-left: 43px;
           height: 100px;
           width: 312px;
+        }
+        @include max-screen(366px){
+          margin-left: 2px;
         }
         &:hover{
           position: relative;
@@ -565,15 +574,18 @@ header{
           margin-left: 150px;
         }
         @include max-screen(517px){
-          margin-left: 80px;
+          margin-left: 100px;
           width: 312px;
           height: 100px;
           top: -170px;
         }
         @include max-screen(462px){
-          margin-left: 3px;
+          margin-left: 43px;
           height: 100px;
           width: 312px;
+        }
+        @include max-screen(366px){
+          margin-left: 2px;
         }
         &:hover{
           position: relative;
@@ -1049,7 +1061,9 @@ header{
 
         .ideas_text {
           max-width: 600px;
-
+          @include max-screen(620px){
+            margin-left: 10px;
+          }
           h4 {
             font-family: $main_font;
             font-style: normal;
