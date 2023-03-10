@@ -375,8 +375,14 @@ header{
           @include max-screen(517px){
             right: 153px;
           }
+          @include max-screen(470px){
+            right: 133px;
+          }
           @include max-screen(360px){
             right: 100px;
+          }
+          @include max-screen(336px){
+            right: 80px;
           }
           p {
             font-family: $main_font;
@@ -447,26 +453,32 @@ header{
               display: none;
             }
           }
-          p{
-            font-family: $main_font;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 15px;
-            line-height: 19px;
-            text-align: right;
-            color: #000000;
-            margin-bottom: 0;
-          }
-          h3 {
-            max-width: 128px;
-            font-family: $second_font;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 32px;
-            line-height: 38px;
-            text-align: right;
-            color: #000000;
-            margin: 0;
+          .watch_text {
+            @include max-screen(517px){
+              margin-left: -200px;
+            }
+            p {
+              font-family: $main_font;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 15px;
+              line-height: 19px;
+              text-align: right;
+              color: #000000;
+              margin-bottom: 0;
+            }
+
+            h3 {
+              max-width: 128px;
+              font-family: $second_font;
+              font-style: normal;
+              font-weight: 400;
+              font-size: 32px;
+              line-height: 38px;
+              text-align: right;
+              color: #000000;
+              margin: 0;
+            }
           }
         }
       }

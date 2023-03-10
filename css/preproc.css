@@ -430,9 +430,19 @@ header .items li:first-of-type {
     right: 153px;
   }
 }
+@media screen and (max-width: 470px) {
+  .categories .categories_articles .laptops .laptops_first .laptops_text {
+    right: 133px;
+  }
+}
 @media screen and (max-width: 360px) {
   .categories .categories_articles .laptops .laptops_first .laptops_text {
     right: 100px;
+  }
+}
+@media screen and (max-width: 336px) {
+  .categories .categories_articles .laptops .laptops_first .laptops_text {
+    right: 80px;
   }
 }
 .categories .categories_articles .laptops .laptops_first .laptops_text p {
@@ -518,7 +528,12 @@ header .items li:first-of-type {
     display: none;
   }
 }
-.categories .categories_articles .laptops .watch p {
+@media screen and (max-width: 517px) {
+  .categories .categories_articles .laptops .watch .watch_text {
+    margin-left: -200px;
+  }
+}
+.categories .categories_articles .laptops .watch .watch_text p {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -528,7 +543,7 @@ header .items li:first-of-type {
   color: #000000;
   margin-bottom: 0;
 }
-.categories .categories_articles .laptops .watch h3 {
+.categories .categories_articles .laptops .watch .watch_text h3 {
   max-width: 128px;
   font-family: "Readex Pro", sans-serif;
   font-style: normal;
