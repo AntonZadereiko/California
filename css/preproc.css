@@ -260,7 +260,7 @@ header .items li:first-of-type {
     margin-top: 0;
   }
 }
-.main_box h1 {
+.main_box h1, .main_box h2 {
   font-family: "Readex Pro", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -270,7 +270,7 @@ header .items li:first-of-type {
   margin-bottom: 19px;
 }
 @media screen and (max-width: 447px) {
-  .main_box h1 {
+  .main_box h1, .main_box h2 {
     font-size: 30px;
     margin-top: 10px;
     line-height: 50px;
